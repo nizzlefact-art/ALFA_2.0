@@ -258,5 +258,5 @@ def main():
     app.run_polling(drop_pending_updates=True)
 
 if __name__ == "__main__":
-    asyncio.get_event_loop().run_until_complete(init_db())
+    asyncio.run(init_db())
     main()
